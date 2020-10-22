@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin: 40px auto;
+            background-color: aliceblue;
+            width: 50%;
+            border: 1px solid #ccc;
+        }
+
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input {
+            width: 50%;
+        }
+
+        button {
+            width: 100px;
+            border-width: inherit;
+            margin-right: 16px;
+            height: 28px;
+            border-radius: 5px;
+            font-weight: bold
+        }
+
+        select {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 40px auto;
+                width: 100%;
+            }
+
+            input {
+                width: 70%;
+            }
+
+            select {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="heading">
+            <h1>Student Registration Form</h1>
+
+        </div>
+        <div class="registration">
+            <form class="form-group" action="">
+                <input type="text" placeholder="First Name" required><br><br>
+                <input type="text" placeholder="Last Name" required><br><br>
+                <input type="text" placeholder="Father Name" required><br><br>
+                <select name="gender" id="gender" required>
+                    <option value="" selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+                <input type="password" placeholder="password" required><br><br>
+                <input type="email" placeholder="Email" required><br><br>
+                <input type="text" placeholder="Address" required><br><br>
+                <input type="number" placeholder="Pincode"><br><br>
+                <input type="text" placeholder="City" required><br><br>
+                <input type="text" placeholder="State" required><br><br>
+                <input type="text" placeholder="Country" required><br><br>
+                <input type="number" placeholder="Mobile Number" maxlength="10" required><br><br>
+                <button style="background:yellow;" type="reset">Reset</button>
+                <button style="background:greenyellow;" type="submit">Submit</button>
+                <br><br>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

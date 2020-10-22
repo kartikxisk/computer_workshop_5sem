@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Number</title>
+</head>
+
+<body>
+    <h1 id="printNum"></h1>
+    <script>
+
+        var colorArr = ['#0ff', '#f00', '#0f0', '#ff0', '#f0f', '#c0f', '#0fc', '#123', '#ff3', '#00f'];
+        var html = '';
+        for (var i = 0; i < 10; i++) {
+            html += `<div style="color:${colorArr[i]}">${i + 1}</div>`;
+        }
+        document.getElementById('printNum').innerHTML = html;
+    </script>
+</body>
+
+</html>
